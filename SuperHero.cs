@@ -17,12 +17,12 @@ namespace Superheroes
         #region Attributes
         private string _hiddenIdentity = "";
         private List<string> _personalIssues = new List<string>();
-        public string alias = "";
-        public List<string> powers = new List<string>();
-        public string mask = "";
-        public string costume = "";
-        public List<string> moralCode = new List<string>();
-        public List<string> enemies = new List<string>();
+        public string Alias = "";
+        public List<string> Powers = new List<string>();
+        public string Mask = "";
+        public string Costume = "";
+        public List<string> MoralCode = new List<string>();
+        public List<string> Enemies = new List<string>();
         #endregion
 
         // Returns information about the hero
@@ -30,12 +30,12 @@ namespace Superheroes
         {
             string info =
                 $"Hidden identity: {_hiddenIdentity} \n" +
-                $"Alias: {alias} \n" +
-                $"Powers: {string.Join(", ", powers)} \n" +
-                $"Mask: {mask}  \n" +
-                $"Costume: {costume}  \n" +
-                $"Moral code: {string.Join(", ", moralCode)}  \n" +
-                $"Enemies: {string.Join(", ", enemies)}  \n" +
+                $"Alias: {Alias} \n" +
+                $"Powers: {string.Join(", ", Powers)} \n" +
+                $"Mask: {Mask}  \n" +
+                $"Costume: {Costume}  \n" +
+                $"Moral code: {string.Join(", ", MoralCode)}  \n" +
+                $"Enemies: {string.Join(", ", Enemies)}  \n" +
                 $"Personal issues: {string.Join(", ", _personalIssues)}  \n";
             return info;
         }
