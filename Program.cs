@@ -9,19 +9,19 @@
 
             superPerson.SetIdentity("John Doe");
 
-            superPerson.alias = "Super Person";
+            superPerson.Alias = "Super Person";
 
-            superPerson.powers.AddRange(new[] {"Teleportation",
+            superPerson.Powers.AddRange(new[] {"Teleportation",
                                                "Shockwave",
                                                "Telekinesis"});
-            superPerson.mask = "Neon Eyes";
-            superPerson.costume = "White Cloak";
+            superPerson.Mask = "Neon Eyes";
+            superPerson.Costume = "White Cloak";
 
-            superPerson.moralCode.AddRange(new[] {"Avoid harm if possible",
+            superPerson.MoralCode.AddRange(new[] {"Avoid harm if possible",
                                                   "Taking the life of your enemies makes you as bad as the enemy",
                                                   "Respect everyone"});
 
-            superPerson.enemies.AddRange(new[] { "Shadow Sovereign",
+            superPerson.Enemies.AddRange(new[] { "Shadow Sovereign",
                                                  "Vortex Marauder",
                                                  "Chaos Weaver" });
 
