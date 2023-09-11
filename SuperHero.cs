@@ -15,40 +15,40 @@ namespace Superheroes
     internal class SuperHero
     {
         #region Attributes
-        private string hiddenIdentity = "";
+        private string _hiddenIdentity = "";
+        private List<string> _personalIssues = new List<string>();
         public string alias = "";
         public List<string> powers = new List<string>();
         public string mask = "";
         public string costume = "";
         public List<string> moralCode = new List<string>();
         public List<string> enemies = new List<string>();
-        private List<string> personalIssues = new List<string>();
         #endregion
 
         // Returns information about the hero
         public string GetHeroInformation()
         {
             string info =
-                $"Hidden identity: {hiddenIdentity} \n" +
+                $"Hidden identity: {_hiddenIdentity} \n" +
                 $"Alias: {alias} \n" +
                 $"Powers: {string.Join(", ", powers)} \n" +
                 $"Mask: {mask}  \n" +
                 $"Costume: {costume}  \n" +
                 $"Moral code: {string.Join(", ", moralCode)}  \n" +
                 $"Enemies: {string.Join(", ", enemies)}  \n" +
-                $"Personal issues: {string.Join(", ", personalIssues)}  \n";
+                $"Personal issues: {string.Join(", ", _personalIssues)}  \n";
             return info;
         }
 
         #region Private Attribute Methods
         public void SetIdentity(string hiddenIdentity)
         {
-            this.hiddenIdentity = hiddenIdentity;
+            _hiddenIdentity = hiddenIdentity;
         }
 
         public void AddPersonalIssues(string[] personalIssues)
         {
-            this.personalIssues.AddRange(personalIssues);
+            _personalIssues.AddRange(personalIssues);
         }
         #endregion
     }
